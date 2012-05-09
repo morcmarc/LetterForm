@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="author" content="Marcell Jusztin, http://marcelljusztin.com" />
+		<meta name="keywords" content="jquery, javascript, php, ajax, contact form, design, web development" />
+		<meta name="description" content="Designing and implementing a contact form interface considering usability and real-world metaphors" />
+		
+		<title>AJAX, PHP Powered Contact Form Design</title>
+		
+		<link rel="stylesheet" href="style/default.css" /> 
+		
+	</head>
+	<body>
+		<div id="container">
+		<div id="envelope">
+			<div id="envelope-bottom"></div>
+			<div id="envelope-top">
+				<span id = "envelope-notification">
+					<!-- <img src = "images/stamp.png" alt = "" /> -->
+				</span>
+			</div>
+			<div id="letter">
+				<h2>Message</h2>
+				<form action="/" method = "post" id = "contact-form" name = "contact-form">
+					<label for="name">Name:</label>
+					<input type="text" id = "name" name = "name" />
+	
+					<label for="email">Email:</label>
+					<input type="text" id = "email" name = "email"/>
+			
+					<label for="message">Message:</label>
+					<textarea name="message" id="message" cols="30" rows="10"></textarea> <br/>
+			
+					<input type="button" value = "Send" onclick = "processForm()"/>
+				</form>
+			</div>
+		</div>
+		</div>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/functions.js"></script>
+
+	</body>
+</html>
+
